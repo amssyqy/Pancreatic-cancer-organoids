@@ -4,9 +4,11 @@ The following softwares and tools were used, including trimmomatic v0.39, bwa-me
 Code has been testes on Linux version 3.10.0-1160.11.1.el7.x86_64  (gcc version 4.8.5 20150623 (Red Hat 4.8.5-44) (GCC) ).
 # Installation guide
 Trimmomatic, bwa-mem, samtools, GATK, ANNOVAR, CNVKit, Gistic,IGV, maftools, Bowtie, TopHat, Cufflinks, Homer can be installed through conda.
-RCircos, NMF, survminer, cgdsr, pheatmap, Enrichr are R packages indcluded in The Comprehensive R Archive Network(CRAN).
-ComplexHeatmap, preprocessCore, annotatr are R packages included in Bioconductor.
-SCENIC can be installed through github (https://rawcdn.githack.com/aertslab/SCENIC/66656c71f99000a67d3f25e8b811e18338ff8270/inst/doc/SCENIC_Setup.html).
 
+RCircos, NMF, survminer, cgdsr, pheatmap, Enrichr are R packages indcluded in The Comprehensive R Archive Network(CRAN).
+
+ComplexHeatmap, preprocessCore, annotatr are R packages included in Bioconductor.
+
+SCENIC can be installed through github (https://rawcdn.githack.com/aertslab/SCENIC/66656c71f99000a67d3f25e8b811e18338ff8270/inst/doc/SCENIC_Setup.html).
 # Instructions for use
 To run the code, you need to visit https://github.com/amssyqy/Pancreatic-cancer-organoids/tree/main/code, choose the folder and then copy the code into software. We have provided all the code and input file.

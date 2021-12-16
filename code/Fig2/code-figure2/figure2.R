@@ -1,8 +1,8 @@
 ##figure 2 left
 ##preparing data and annoatation
-load("mut_table_left.RData") ##load mutation data
-load("figure2_annotation.RData") ##load clinical data
-load("anno_color.RData")##load annotation colour
+load("data-figure2/mut_table_left.RData") ##load mutation data
+load("data-figure2/figure2_annotation.RData") ##load clinical data
+load("data-figure2/anno_color.RData")##load annotation colour
 col= c("HOMDEL" = "royalblue", "AMP" = "red", "MUT" = "darkgreen","Noncoding"="goldenrod1")
 alter_fun = list(
   background = function(x, y, w, h) {
@@ -35,7 +35,7 @@ oncoPrint(mut_table_left,
           column_names_gp = gpar(fontsize = 10), 
           pct_gp = gpar(fontsize = 10),
           heatmap_legend_param = heatmap_legend_param,
-          row_split = factor(c(rep("exonic", 13),rep("UTR", 2),rep("up/downstream", 14), rep("ncRNA", 2),rep("intronic",7),rep("intergenic",5),rep("CNV",9)),levels = c("exonic","UTR","up/downstream","ncRNA","intronic","intergenic","CNV")),
+          row_split = factor(c(rep("exonic", 13),rep("UTR", 2),rep("up/downstream", 13), rep("ncRNA", 2),rep("intronic",7),rep("intergenic",5),rep("CNV",9)),levels = c("exonic","UTR","up/downstream","ncRNA","intronic","intergenic","CNV")),
           right_annotation = NULL,
           top_annotation = HeatmapAnnotation(
               Histologic.Subtype = figure2_annotation[colnames(mut_table_left),]$Histologic.Subtype,
@@ -46,7 +46,7 @@ oncoPrint(mut_table_left,
           alter_fun_is_vectorized =FALSE)
 
 ##figure 2 right
-load("mut_table_right.RData") ##load mutation data
+load("data-figure2/mut_table_right.RData") ##load mutation data
 
 ###print
 library(ComplexHeatmap)
